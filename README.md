@@ -1,6 +1,6 @@
 # Real Estate App
 
-#### This is a sample rails application demonstrating how to use Unirest and HTTP-Cookie to make HTTP requests with authorizations and cookies, specifically for the Midwest Real Estate Data (MRED) RETS API.
+#### This is a sample rails application demonstrating how to use [Unirest](http://unirest.io/ruby.html) and [HTTP-Cookie](https://github.com/sparklemotion/http-cookie) to make HTTP requests with authorizations and cookies, specifically for the Midwest Real Estate Data (MRED) RETS API.
 
 ### Installation
 
@@ -18,3 +18,12 @@ You will also need to add a `.env` file to the root folder of the app. In this f
 USERNAME=[username]
 PASSWORD=[password]
 ```
+
+### Resources
+
+* [Unirest](http://unirest.io/ruby.html) - Unirest gem documentation
+* [HTTP-Cookie](https://github.com/sparklemotion/http-cookie) - HTTP-Cookie Github repository
+* [URI](https://ruby-doc.org/stdlib-2.1.1/libdoc/uri/rdoc/URI.html) - URI Ruby Documentation
+* [connectMLS: RETS Developer's Start Guide](http://www.mredllc.com/rets/documents/RETS%20Developer%20Start%20Guide1.pdf)
+* [MRED RETS Resources](http://mredllc.com/products_resources/rets.asp)
+* [MRED RETS API Login URL](http://connectmls-rets.mredllc.com/rets/server/login)
