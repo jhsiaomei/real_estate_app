@@ -25,10 +25,13 @@ class PagesController < ApplicationController
     # save the current jar
     jar.save("mrets_cookies")
 
-    # use Unirest a second request using your search URI (must be a string) and the headers you stored earlier
+    # use Unirest to submit a second request using your search URI (must be a string) and the headers you stored earlier
     response2 = Unirest.get(uri.to_s, headers: headers).body
     
-    # parse the XML response into JSON
-    @response2 = Hash.from_xml(response2).to_json
+    # parse the XML response into JSON-like string
+    hash_as_string = Hash.from_xml(response2).to_json
+
+    # convert string into actual JSON
+    @response2 = JSON.parse hash_as_string.gsub('=>', ':')
   end
 end
