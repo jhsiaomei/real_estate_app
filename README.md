@@ -15,7 +15,7 @@ gem 'dotenv-rails', '~> 2.1', '>= 2.1.1'
 
 ### Installation
 
-To use this example locally, you can clone the respository to your local computer.
+To use this example locally, you can clone the repository to your local computer.
 
 You will need to run bundle to account for the added dependencies.
 
